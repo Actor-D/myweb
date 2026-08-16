@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="个人主页——关于我、作品项目与联系方式。"
+    />
+    <meta name="theme-color" content="#f6f2ea" />
+    <title>你的名字｜个人主页</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="返回首页">
+        <span class="brand-mark">N</span>
+        <span>你的名字</span>
+      </a>
+
+      <button
+        class="menu-button"
+        type="button"
+        aria-label="打开导航菜单"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        <span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="主导航">
+        <a href="#about">关于我</a>
+        <a href="#projects">作品</a>
+        <a href="#contact">联系我</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">HELLO, WORLD!</p>
+          <h1>你好，我是<span>你的名字。</span></h1>
+          <p class="hero-intro">
+            一名专注于<span class="highlight">你的职业或方向</span>的创作者。这里记录我的作品、经历，以及我对生活与技术的热爱。
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">看看我的作品</a>
+            <a class="text-link" href="#contact">和我聊聊 <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="个人照片占位区域">
+          <div class="portrait-placeholder">
+            <span>在这里放<br />你的照片</span>
+          </div>
+          <p class="availability"><i></i> 期待新的合作机会</p>
+        </div>
+
+        <p class="scroll-note" aria-hidden="true">向下探索 <span>↓</span></p>
+      </section>
+
+      <section id="about" class="about section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2>关于我</h2>
+        </div>
+
+        <div class="about-grid">
+          <p class="about-lead reveal">
+            我相信，好的作品既要解决问题，也要让人感到愉悦。
+          </p>
+          <div class="about-body reveal">
+            <p>
+              请在这里写一段简短的自我介绍：你来自哪里、正在做什么、擅长什么，以及你真正关心的事情。真诚而具体的文字最能让人记住你。
+            </p>
+            <div class="skill-list" aria-label="技能列表">
+              <span>技能一</span>
+              <span>技能二</span>
+              <span>技能三</span>
+              <span>技能四</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / SELECTED WORK</p>
+          <h2>精选作品</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card project-card-featured reveal">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <p class="project-type">个人项目 · 2026</p>
+              <h3>项目名称一</h3>
+              <p>用一两句话介绍这个项目解决了什么问题，以及你在其中承担的角色。</p>
+              <a href="#" aria-label="查看项目名称一">查看项目 <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-art art-one" aria-hidden="true">
+              <span>PROJECT<br />PREVIEW</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <p class="project-type">作品类型 · 2026</p>
+              <h3>项目名称二</h3>
+              <p>添加项目亮点、使用的技术，或者它为用户带来的实际价值。</p>
+              <a href="#" aria-label="查看项目名称二">查看项目 <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-art art-two" aria-hidden="true">
+              <span>IDEA<br />TO LIFE</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <p class="project-type">作品类型 · 2025</p>
+              <h3>项目名称三</h3>
+              <p>即使暂时没有完整案例，也可以放学习成果、摄影、文章或实验项目。</p>
+              <a href="#" aria-label="查看项目名称三">查看项目 <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="project-art art-three" aria-hidden="true">
+              <span>MAKE<br />IT REAL</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-shell">
+        <div class="contact-inner reveal">
+          <p class="eyebrow">03 / CONTACT</p>
+          <h2>有想法？<br />一起把它变成现实。</h2>
+          <a class="contact-email" href="mailto:hello@example.com">
+            hello@example.com <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p>© <span id="current-year">2026</span> 你的名字</p>
+      <div class="social-links">
+        <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#">小红书</a>
+        <a href="#">即刻</a>
+      </div>
+      <a href="#home">回到顶部 ↑</a>
+    </footer>
+  </body>
+</html>
