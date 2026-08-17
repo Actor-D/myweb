@@ -10,7 +10,7 @@ const translations = {
       menuOpen: "打开导航菜单",
       menuClose: "关闭导航菜单",
       navigation: "主导航",
-      portrait: "Actor.D 个人标识",
+      portrait: "Actor.D 数据化个人信息面板",
       focusList: "专业方向列表",
       techStack: "项目技术栈",
       projectPreview: "浙就来项目交互界面预览",
@@ -26,12 +26,20 @@ const translations = {
       primaryAction: "查看我的项目",
       secondaryAction: "联系我",
       scroll: "向下探索",
+      metricBuild: "前后端开发",
+      metricJourney: "跨校学习经历",
+      metricFocus: "交叉专业视角",
+      visualStatus: "当前状态",
+      visualMode: "探索模式",
     },
     about: {
       title: "关于我",
       lead: "以数据理解问题，用分析支持更好的商业决策。",
       body:
         "我毕业于浙江大学信息管理与信息系统专业，目前就读于香港中文大学商业分析理学硕士项目。这段跨越信息系统与商业分析的学习经历，让我持续关注如何连接数据、技术与真实的商业问题。",
+      factFoundation: "本科基础",
+      factCurrent: "当前项目",
+      factInterest: "关注领域",
     },
     focus: {
       informationManagement: "信息管理",
@@ -45,6 +53,14 @@ const translations = {
       subtitle: "面向浙江大学校园场景的配送服务平台",
       summary:
         "项目围绕校园外卖与物品配送需求，连接用户认证、多步骤下单、地址管理、支付选择和订单查询，形成完整的前后端业务流程。",
+      challengeEyebrow: "业务问题",
+      challengeTitle: "校园配送信息分散，履约流程缺少统一入口",
+      challengeBody:
+        "学生在外卖、快递与校内物品配送场景中，需要重复沟通取件位置、收货地址、费用和进度，信息容易遗漏。",
+      solutionEyebrow: "产品方案",
+      solutionTitle: "把身份、订单、地址与支付串成一条数字化链路",
+      solutionBody:
+        "平台围绕学生身份构建统一账户，用分步表单降低下单复杂度，并通过订单状态和个人中心沉淀完整服务记录。",
       prototype: "交互界面预览",
       tabLogin: "用户登录",
       tabOrder: "创建订单",
@@ -87,6 +103,16 @@ const translations = {
       factWorkflow: "步订单流程",
       factModels: "个核心数据模型",
       factAuth: "令牌身份认证",
+      flowEyebrow: "核心业务流",
+      flowTitle: "从需求提交到订单履约",
+      flowOneTitle: "提交需求",
+      flowOneBody: "填写物品名称、取件柜与备注，支持加急配送。",
+      flowTwoTitle: "确认地址",
+      flowTwoBody: "选择常用地址或输入新地点，绑定当前用户。",
+      flowThreeTitle: "选择支付",
+      flowThreeBody: "按普通或加急规则计算现金与积分费用。",
+      flowFourTitle: "追踪订单",
+      flowFourBody: "查看订单列表、详情、状态并支持再次下单。",
       featuresEyebrow: "核心功能",
       featuresTitle: "从登录到履约的完整体验",
       featureOne: "学号注册登录、密码加密与受保护路由",
@@ -97,6 +123,24 @@ const translations = {
       architectureTitle: "清晰的前后端分层",
       archClient: "客户端",
       archData: "数据层",
+      engineeringEyebrow: "工程拆解",
+      engineeringTitle: "不仅完成页面，也打通真实数据链路",
+      engineeringBody:
+        "前端路由、状态管理和表单交互与后端认证、数据库关系、文件上传共同组成可运行的全栈原型。",
+      engineeringFrontTitle: "前端应用层",
+      engineeringFrontBody: "Vue 3 组件化页面，Vue Router 管理受保护路由，Pinia 负责广告等共享状态。",
+      engineeringApiTitle: "后端服务层",
+      engineeringApiBody: "Flask 提供 REST API，处理注册登录、资料、地址、订单和图片上传。",
+      engineeringDataTitle: "数据模型层",
+      engineeringDataBody: "User、Address、Order 三个核心模型通过用户外键关联，支持用户级数据隔离。",
+      engineeringSecurityTitle: "认证与安全",
+      engineeringSecurityBody: "PBKDF2 密码哈希、24 小时 JWT、请求鉴权与上传文件类型、大小限制。",
+      apiRegister: "创建学生账户",
+      apiLogin: "验证身份并签发令牌",
+      apiAddresses: "读取当前用户地址",
+      apiOrder: "创建并计算配送订单",
+      apiOrderDetail: "获取用户订单详情",
+      apiUpload: "上传订单凭证图片",
     },
     journey: {
       title: "学习与方向",
@@ -125,7 +169,7 @@ const translations = {
       menuOpen: "Open navigation menu",
       menuClose: "Close navigation menu",
       navigation: "Main navigation",
-      portrait: "Actor.D monogram",
+      portrait: "Actor.D data profile panel",
       focusList: "Areas of focus",
       techStack: "Project technology stack",
       projectPreview: "Interactive interface preview for the Zhejiulai project",
@@ -141,12 +185,20 @@ const translations = {
       primaryAction: "View my project",
       secondaryAction: "Get in touch",
       scroll: "Scroll to explore",
+      metricBuild: "Front-end & back-end",
+      metricJourney: "Cross-campus journey",
+      metricFocus: "Interdisciplinary lens",
+      visualStatus: "CURRENT STATUS",
+      visualMode: "EXPLORATION MODE",
     },
     about: {
       title: "About me",
       lead: "Understanding problems through data and enabling better business decisions through analytics.",
       body:
         "I graduated from Zhejiang University with a degree in Information Management & Information Systems and am currently pursuing an MSc in Business Analytics at The Chinese University of Hong Kong. This interdisciplinary journey keeps me focused on connecting data and technology with real business challenges.",
+      factFoundation: "FOUNDATION",
+      factCurrent: "CURRENT PROGRAMME",
+      factInterest: "INTERESTS",
     },
     focus: {
       informationManagement: "Information Management",
@@ -160,6 +212,14 @@ const translations = {
       subtitle: "A campus delivery service platform designed for Zhejiang University",
       summary:
         "Built around campus food and parcel delivery, the project connects authentication, multi-step ordering, address management, payment selection, and order tracking in one complete full-stack workflow.",
+      challengeEyebrow: "THE PROBLEM",
+      challengeTitle: "Campus delivery information is fragmented, with no unified fulfilment workflow",
+      challengeBody:
+        "Across food, parcel, and on-campus delivery, students repeatedly communicate pickup points, destinations, fees, and progress—making details easy to miss.",
+      solutionEyebrow: "THE SOLUTION",
+      solutionTitle: "Connect identity, orders, addresses, and payment in one digital chain",
+      solutionBody:
+        "The platform builds a unified account around student identity, simplifies ordering with guided steps, and retains the complete service history through status tracking and a personal centre.",
       prototype: "Interactive UI preview",
       tabLogin: "User login",
       tabOrder: "Create order",
@@ -202,6 +262,16 @@ const translations = {
       factWorkflow: "step order workflow",
       factModels: "core data models",
       factAuth: "token authentication",
+      flowEyebrow: "CORE WORKFLOW",
+      flowTitle: "From request to fulfilment",
+      flowOneTitle: "Submit request",
+      flowOneBody: "Enter the item, pickup locker, notes, and optional priority delivery.",
+      flowTwoTitle: "Confirm address",
+      flowTwoBody: "Select a saved address or add a new location tied to the user.",
+      flowThreeTitle: "Choose payment",
+      flowThreeBody: "Calculate cash and points pricing using standard or priority rules.",
+      flowFourTitle: "Track order",
+      flowFourBody: "Review order lists, details, status, and place the same order again.",
       featuresEyebrow: "CORE CAPABILITIES",
       featuresTitle: "A complete experience from sign-in to delivery",
       featureOne: "Student account registration, password hashing, and protected routes",
@@ -212,6 +282,28 @@ const translations = {
       architectureTitle: "A clear full-stack separation",
       archClient: "CLIENT",
       archData: "DATA LAYER",
+      engineeringEyebrow: "ENGINEERING BREAKDOWN",
+      engineeringTitle: "More than screens: a connected, working data flow",
+      engineeringBody:
+        "Front-end routing, state, and form interactions work with back-end authentication, relational data, and file uploads to form a functional full-stack prototype.",
+      engineeringFrontTitle: "Front-end application",
+      engineeringFrontBody:
+        "Vue 3 powers component-based screens, Vue Router protects authenticated routes, and Pinia handles shared state such as advertisements.",
+      engineeringApiTitle: "Back-end services",
+      engineeringApiBody:
+        "Flask exposes REST endpoints for registration, sign-in, profiles, addresses, orders, and image uploads.",
+      engineeringDataTitle: "Data models",
+      engineeringDataBody:
+        "The User, Address, and Order models are joined by user foreign keys to maintain user-scoped data.",
+      engineeringSecurityTitle: "Authentication & security",
+      engineeringSecurityBody:
+        "PBKDF2 password hashing, 24-hour JWTs, request authorization, plus upload type and size validation.",
+      apiRegister: "Create a student account",
+      apiLogin: "Verify identity and issue a token",
+      apiAddresses: "Read the current user's addresses",
+      apiOrder: "Create and price a delivery order",
+      apiOrderDetail: "Retrieve user-scoped order details",
+      apiUpload: "Upload an order proof image",
     },
     journey: {
       title: "Journey & focus",
@@ -352,4 +444,56 @@ const revealObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+
+const scrollProgress = document.querySelector(".scroll-progress i");
+const pageSections = document.querySelectorAll("main > section[id]");
+
+function updateScrollProgress() {
+  const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+  scrollProgress.style.transform = `scaleX(${Math.min(Math.max(progress, 0), 1)})`;
+}
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navigationLinks.forEach((link) => {
+        link.classList.toggle("is-current", link.getAttribute("href") === `#${entry.target.id}`);
+      });
+    });
+  },
+  { rootMargin: "-35% 0px -55%", threshold: 0 },
+);
+
+pageSections.forEach((section) => sectionObserver.observe(section));
+window.addEventListener("scroll", updateScrollProgress, { passive: true });
+updateScrollProgress();
+
+if (window.matchMedia("(pointer: fine)").matches) {
+  window.addEventListener(
+    "pointermove",
+    (event) => {
+      document.documentElement.style.setProperty("--pointer-x", `${event.clientX}px`);
+      document.documentElement.style.setProperty("--pointer-y", `${event.clientY}px`);
+    },
+    { passive: true },
+  );
+}
+
+function revealAndJumpToHash() {
+  if (!window.location.hash) return;
+  const target = document.querySelector(window.location.hash);
+  if (!target) return;
+
+  target.classList.add("is-visible");
+  target.querySelectorAll(".reveal").forEach((element) => element.classList.add("is-visible"));
+  document.documentElement.style.scrollBehavior = "auto";
+  target.scrollIntoView({ block: "start" });
+  requestAnimationFrame(() => document.documentElement.style.removeProperty("scroll-behavior"));
+}
+
+window.addEventListener("hashchange", revealAndJumpToHash);
+requestAnimationFrame(revealAndJumpToHash);
+
 setLanguage(currentLanguage);

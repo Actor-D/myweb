@@ -7,12 +7,19 @@
       name="description"
       content="Actor.D 的个人主页——浙江大学信息管理与信息系统专业毕业，现就读于香港中文大学商业分析理学硕士。"
     />
-    <meta name="theme-color" content="#f6f2ea" />
+    <meta name="theme-color" content="#070a12" />
     <title>Actor.D｜个人主页</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"><i></i></div>
+    <div class="page-atmosphere" aria-hidden="true">
+      <span class="atmosphere-grid"></span>
+      <span class="atmosphere-glow glow-one"></span>
+      <span class="atmosphere-glow glow-two"></span>
+      <span class="atmosphere-noise"></span>
+    </div>
     <a class="skip-link" href="#main" data-i18n="accessibility.skip">跳到主要内容</a>
 
     <header class="site-header">
@@ -65,13 +72,37 @@
               <span aria-hidden="true">↗</span>
             </a>
           </div>
+          <div class="hero-metrics">
+            <div><strong>FULL STACK</strong><span data-i18n="hero.metricBuild">前后端开发</span></div>
+            <div><strong>ZJU → CUHK</strong><span data-i18n="hero.metricJourney">跨校学习经历</span></div>
+            <div><strong>DATA × BIZ</strong><span data-i18n="hero.metricFocus">交叉专业视角</span></div>
+          </div>
         </div>
 
         <div class="hero-visual reveal" data-i18n-aria-label="accessibility.portrait">
-          <div class="portrait-placeholder">
-            <span>ACTOR<br />.D</span>
+          <div class="tech-profile-card">
+            <div class="tech-card-header">
+              <span>PROFILE / 01</span>
+              <span class="system-online"><i></i> ONLINE</span>
+            </div>
+            <div class="data-orbit" aria-hidden="true">
+              <span class="orbit orbit-one"></span>
+              <span class="orbit orbit-two"></span>
+              <span class="orbit orbit-three"></span>
+              <span class="orbit-node node-zju">ZJU</span>
+              <span class="orbit-node node-cuhk">CUHK</span>
+              <span class="orbit-node node-ba">BA</span>
+              <span class="orbit-node node-is">IS</span>
+              <span class="data-particle particle-one"></span>
+              <span class="data-particle particle-two"></span>
+              <span class="data-particle particle-three"></span>
+              <div class="orbit-core"><small>ACTOR</small><strong>.D</strong></div>
+            </div>
+            <div class="tech-card-footer">
+              <div><small data-i18n="hero.visualStatus">当前状态</small><strong>CUHK · MSc BA</strong></div>
+              <div><small data-i18n="hero.visualMode">探索模式</small><strong>DATA / TECH / BIZ</strong></div>
+            </div>
           </div>
-          <p class="availability"><i></i> ZJU → CUHK</p>
         </div>
 
         <p class="scroll-note" aria-hidden="true">
@@ -98,6 +129,11 @@
               <span data-i18n="focus.informationSystems">信息系统</span>
               <span data-i18n="focus.businessAnalytics">商业分析</span>
               <span data-i18n="focus.dataDriven">数据驱动决策</span>
+            </div>
+            <div class="profile-facts">
+              <div><small data-i18n="about.factFoundation">本科基础</small><strong>ZJU · IM&amp;IS</strong></div>
+              <div><small data-i18n="about.factCurrent">当前项目</small><strong>CUHK · MSc BA</strong></div>
+              <div><small data-i18n="about.factInterest">关注领域</small><strong>Analytics · Product</strong></div>
             </div>
           </div>
         </div>
@@ -129,6 +165,25 @@
               <span>JWT</span>
             </div>
           </div>
+        </div>
+
+        <div class="project-challenge-grid">
+          <article class="project-challenge reveal">
+            <span class="challenge-index">01</span>
+            <p class="eyebrow" data-i18n="projects.challengeEyebrow">业务问题</p>
+            <h3 data-i18n="projects.challengeTitle">校园配送信息分散，履约流程缺少统一入口</h3>
+            <p data-i18n="projects.challengeBody">
+              学生在外卖、快递与校内物品配送场景中，需要重复沟通取件位置、收货地址、费用和进度，信息容易遗漏。
+            </p>
+          </article>
+          <article class="project-challenge project-solution reveal">
+            <span class="challenge-index">02</span>
+            <p class="eyebrow" data-i18n="projects.solutionEyebrow">产品方案</p>
+            <h3 data-i18n="projects.solutionTitle">把身份、订单、地址与支付串成一条数字化链路</h3>
+            <p data-i18n="projects.solutionBody">
+              平台围绕学生身份构建统一账户，用分步表单降低下单复杂度，并通过订单状态和个人中心沉淀完整服务记录。
+            </p>
+          </article>
         </div>
 
         <div class="product-showcase reveal" data-i18n-aria-label="accessibility.projectPreview">
@@ -277,6 +332,42 @@
           <div><strong>JWT</strong><span data-i18n="projects.factAuth">令牌身份认证</span></div>
         </div>
 
+        <div class="delivery-flow reveal">
+          <div class="flow-heading">
+            <p class="eyebrow" data-i18n="projects.flowEyebrow">核心业务流</p>
+            <h3 data-i18n="projects.flowTitle">从需求提交到订单履约</h3>
+          </div>
+          <div class="flow-track">
+            <article>
+              <span class="flow-icon">01</span>
+              <small>INPUT</small>
+              <h4 data-i18n="projects.flowOneTitle">提交需求</h4>
+              <p data-i18n="projects.flowOneBody">填写物品名称、取件柜与备注，支持加急配送。</p>
+            </article>
+            <i aria-hidden="true"></i>
+            <article>
+              <span class="flow-icon">02</span>
+              <small>LOCATION</small>
+              <h4 data-i18n="projects.flowTwoTitle">确认地址</h4>
+              <p data-i18n="projects.flowTwoBody">选择常用地址或输入新地点，绑定当前用户。</p>
+            </article>
+            <i aria-hidden="true"></i>
+            <article>
+              <span class="flow-icon">03</span>
+              <small>PAYMENT</small>
+              <h4 data-i18n="projects.flowThreeTitle">选择支付</h4>
+              <p data-i18n="projects.flowThreeBody">按普通或加急规则计算现金与积分费用。</p>
+            </article>
+            <i aria-hidden="true"></i>
+            <article>
+              <span class="flow-icon">04</span>
+              <small>STATUS</small>
+              <h4 data-i18n="projects.flowFourTitle">追踪订单</h4>
+              <p data-i18n="projects.flowFourBody">查看订单列表、详情、状态并支持再次下单。</p>
+            </article>
+          </div>
+        </div>
+
         <div class="project-detail-grid">
           <article class="project-detail reveal">
             <p class="eyebrow" data-i18n="projects.featuresEyebrow">核心功能</p>
@@ -299,6 +390,62 @@
               <div><small data-i18n="projects.archData">数据层</small><strong>SQLAlchemy</strong><span>SQLite</span></div>
             </div>
           </article>
+        </div>
+
+        <div class="engineering-section">
+          <div class="engineering-heading reveal">
+            <p class="eyebrow" data-i18n="projects.engineeringEyebrow">工程拆解</p>
+            <h3 data-i18n="projects.engineeringTitle">不仅完成页面，也打通真实数据链路</h3>
+            <p data-i18n="projects.engineeringBody">
+              前端路由、状态管理和表单交互与后端认证、数据库关系、文件上传共同组成可运行的全栈原型。
+            </p>
+          </div>
+          <div class="engineering-grid">
+            <article class="engineering-card reveal">
+              <span class="engineering-code">FE / 01</span>
+              <div class="engineering-icon">&lt;/&gt;</div>
+              <h4 data-i18n="projects.engineeringFrontTitle">前端应用层</h4>
+              <p data-i18n="projects.engineeringFrontBody">Vue 3 组件化页面，Vue Router 管理受保护路由，Pinia 负责广告等共享状态。</p>
+              <div class="engineering-tags"><span>Vue 3</span><span>Router</span><span>Pinia</span></div>
+            </article>
+            <article class="engineering-card reveal">
+              <span class="engineering-code">API / 02</span>
+              <div class="engineering-icon">↔</div>
+              <h4 data-i18n="projects.engineeringApiTitle">后端服务层</h4>
+              <p data-i18n="projects.engineeringApiBody">Flask 提供 REST API，处理注册登录、资料、地址、订单和图片上传。</p>
+              <div class="engineering-tags"><span>Flask</span><span>REST</span><span>CORS</span></div>
+            </article>
+            <article class="engineering-card reveal">
+              <span class="engineering-code">DB / 03</span>
+              <div class="engineering-icon">◫</div>
+              <h4 data-i18n="projects.engineeringDataTitle">数据模型层</h4>
+              <p data-i18n="projects.engineeringDataBody">User、Address、Order 三个核心模型通过用户外键关联，支持用户级数据隔离。</p>
+              <div class="engineering-tags"><span>SQLAlchemy</span><span>SQLite</span><span>ORM</span></div>
+            </article>
+            <article class="engineering-card reveal">
+              <span class="engineering-code">SEC / 04</span>
+              <div class="engineering-icon">◇</div>
+              <h4 data-i18n="projects.engineeringSecurityTitle">认证与安全</h4>
+              <p data-i18n="projects.engineeringSecurityBody">PBKDF2 密码哈希、24 小时 JWT、请求鉴权与上传文件类型、大小限制。</p>
+              <div class="engineering-tags"><span>JWT</span><span>PBKDF2</span><span>Validation</span></div>
+            </article>
+          </div>
+
+          <div class="api-console reveal">
+            <div class="api-console-header">
+              <div><i></i><i></i><i></i></div>
+              <span>zhejiulai / server / app.py</span>
+              <b>REST API</b>
+            </div>
+            <div class="api-console-body">
+              <div><span class="method post">POST</span><code>/api/register</code><small data-i18n="projects.apiRegister">创建学生账户</small><b>201</b></div>
+              <div><span class="method post">POST</span><code>/api/login</code><small data-i18n="projects.apiLogin">验证身份并签发令牌</small><b>200</b></div>
+              <div><span class="method get">GET</span><code>/api/addresses</code><small data-i18n="projects.apiAddresses">读取当前用户地址</small><b>200</b></div>
+              <div><span class="method post">POST</span><code>/api/order</code><small data-i18n="projects.apiOrder">创建并计算配送订单</small><b>201</b></div>
+              <div><span class="method get">GET</span><code>/api/order/:id</code><small data-i18n="projects.apiOrderDetail">获取用户订单详情</small><b>200</b></div>
+              <div><span class="method post">POST</span><code>/api/upload</code><small data-i18n="projects.apiUpload">上传订单凭证图片</small><b>200</b></div>
+            </div>
+          </div>
         </div>
       </section>
 
